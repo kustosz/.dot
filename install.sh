@@ -9,3 +9,5 @@ mkdir vim/backup
 ln -s ~/.dot/vim/vimrc ~/.vimrc
 ln -s ~/.dot/vim ~/.vim
 vim +PluginInstall +qall
+
+ln -s ~/.dot/tmux.conf ~/.tmux.conf
