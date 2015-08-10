@@ -1,8 +1,8 @@
 set nocompatible
 
 set mouse=a
+set rtp+=~/.vim/bundle/Vundle.vim
 
-call pathogen#infect() "Use pathogen for bundle management
 let mapleader=","      "Set the best leader
 set encoding=utf-8     "Set encoding
 set hidden             "Better buffer behavior
