@@ -1,7 +1,16 @@
 set nocompatible
 
 set mouse=a
+
 set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+
+call vundle#end()
 
 let mapleader=","      "Set the best leader
 set encoding=utf-8     "Set encoding
