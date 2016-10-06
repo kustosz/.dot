@@ -12,15 +12,23 @@ autoload -U ~/.zsh/functions/*(:t)
 . ~/.zsh/completion
 . ~/.zsh/bindings
 
-PATH=$PATH:$HOME/.rvm/bin:$HOME/.cabal/bin:$HOME/code/new_byte_order
+PATH=$HOME/code/nbo/new_byte_order/dist/bin:/Users/marcinkostrzewa/code/nbo/luna/compiler/build/dist/bin:$HOME/.rvm/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH=$HOME/code/ghc-js/.cabal-sandbox/bin:$HOME/.cabal/bin:$PATH
+#export PATH=$HOME/code/ghc-js/.cabal-sandbox/bin:$HOME/.cabal/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.stack/programs/x86_64-osx/ghc-7.8/bin:$PATH
+#export PATH=$HOME/.stack/programs/x86_64-osx/ghc-7.8/bin:$PATH
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/code/gospace/bin
+export GOPATH=$HOME/code/gospace
 
 #export GHC_DOT_APP="/Users/marcinkostrzewa/Downloads/ghc-7.8.4.app"
 #if [ -d "$GHC_DOT_APP" ]; then
     #export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
 #fi
+## Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
+export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
+if [ -d "$GHC_DOT_APP" ]; then
+  export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+fi
