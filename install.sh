@@ -6,6 +6,7 @@ ln -s ~/.dot/gitignore ~/.gitignore
 git submodule init
 git submodule update
 mkdir vim/backup
+rm -rf ~/.vim
 ln -s ~/.dot/vim/vimrc ~/.vimrc
 ln -s ~/.dot/vim ~/.vim
 vim +PluginInstall +qall
